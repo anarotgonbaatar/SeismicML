@@ -14,7 +14,10 @@ export default function Home() {
 			<InputForm setPredictionData={ setPredictionData }/>
 			{ predictionData && <Predictions data={ predictionData }/> }
 			<HeatMap/>
-			<p className="footer">Developed by Anar Otgonbaatar and Adam Kaci.</p>
+			<div className="footer">
+				<p>This website estimates the risk and likely magnitude range of potential earthquakes in a given area based on historical seismic activity, using machine learning models trained on USGS earthquake catalogs.</p>
+				<p>Developed by Anar Otgonbaatar and Adam Kaci.</p>
+			</div>
 		</div>
 	)
 }

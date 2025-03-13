@@ -48,17 +48,6 @@ export default function InputForm( { setPredictionData }: InputFormProps ) {
 				placeholder="01/01/2025"
 				required
 			/>
-			{/* Depth */}
-			<label htmlFor="">Depth</label>
-			<input
-				type="text"
-				value={ location }
-				onChange={(e) => setLocation( e.target.value )}
-				className="input"
-				aria-label="Location"
-				placeholder="10"
-				required
-			/>
 		</form>
 	)
 }
