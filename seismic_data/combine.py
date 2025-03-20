@@ -2,7 +2,7 @@ import pandas as pd
 import os
 
 # Folder containing CSV files
-folder_path = "C:\\Users\\anaro\\Desktop\\Academics\\CPSC 483 - Intro to ML\\SeismicML\\source-data-files"
+folder_path = os.path.join(os.getcwd(), "seismic_data", "source-data-files")
 
 # Get all CSV files in the folder
 csv_files = [f for f in os.listdir(folder_path) if f.endswith(".csv")]
