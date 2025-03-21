@@ -19,7 +19,9 @@ if not csv_files:
 df_list = [pd.read_csv(os.path.join(folder_path, file)) for file in csv_files]
 combined_df = pd.concat(df_list, ignore_index=True)
 
+# Get path where we want to store the combined dataset
+output_path = os.path.join(os.getcwd(), "seismic_data")
 # Save the combined dataset
-combined_df.to_csv("combined_dataset.csv", index=False)
+combined_df.to_csv(os.path.join(output_path, "combined_dataset.csv"), index=False)
 
 print("✅ Combined dataset saved as 'combined_dataset.csv'")
